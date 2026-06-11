@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "name": "@hazae41/eip2930",
+  "version": "1.0.0",
+  "description": "EIP-2930 transactions for the web",
+  "repository": "github:hazae41/eip2930",
+  "author": "hazae41",
+  "scripts": {
+    "examine": "deno lint ./src && deno check ./src && deno test -RW ./src",
+    "prepack": "rm -rf ./out && tsc && tscousin"
+  },
+  "files": [
+    "./out"
+  ],
+  "exports": {
+    ".": {
+      "types": "./out/mod.d.ts",
+      "import": "./out/mod.js"
+    }
+  },
+  "devDependencies": {
+    "@hazae41/phobos": "^2.0.16",
+    "@hazae41/tscousin": "^1.0.28",
+    "@types/node": "^25.9.1",
+    "deno": "^2.8.1",
+    "typescript": "^6.0.3"
+  },
+  "keywords": [
+    "typescript",
+    "esmodules",
+    "tested",
+    "unit-tested"
+  ],
+  "dependencies": {
+    "@hazae41/binary": "^2.1.1",
+    "@hazae41/eip2718": "^1.0.0",
+    "@hazae41/rlp": "^1.0.0"
+  }
+}
