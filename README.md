@@ -1,4 +1,4 @@
-# EIP-2930
+# EIP-2930: Optional access lists
 
 EIP-2930 transactions for the web
 
